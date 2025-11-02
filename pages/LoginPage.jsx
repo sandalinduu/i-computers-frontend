@@ -1,4 +1,4 @@
-// 
+
 
 
 import { useState } from "react";
@@ -27,10 +27,10 @@ export default function Login() {
 
   // Step 4: Return the UI
   return (
-    <div className="w-screen h-screen flex justify-center items-center bg-gray-100">
+    <div className="w-screen h-screen bg-[url('/bg.jpg')] bg-center bg-cover bg-no-repeat flex justify-center items-center">
       <form
         onSubmit={handleLogin}
-        className="bg-white p-8 rounded-2xl shadow-lg w-[300px] flex flex-col gap-4"
+        className="backdrop-blur-lg p-8 rounded-2xl shadow-2xl w-[400px] flex flex-col gap-4"
       >
         <h1 className="text-2xl font-bold text-center">Login</h1>
 
@@ -52,7 +52,7 @@ export default function Login() {
 
         <button
           type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+          className="bg-secondary text-white px-4 py-2 rounded-lg  hover:bg-transparent border-accent"
         >
           Login
         </button>
